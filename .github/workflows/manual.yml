@@ -40,6 +40,6 @@ jobs:
     # Runs a single command using the runners shell
     - uses: actions/checkout@v4
     - name: check folder
-      run: ls -l
+        run: ls -l
     - name: Send greeting
-      run: mysql -h ${{ github.event.inputs.name }} -u gestor -p'Abcd1234'
+        run: mysql -h ${{ github.event.inputs.name }} -u gestor -p'Abcd1234'
